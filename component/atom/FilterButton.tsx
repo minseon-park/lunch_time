@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../../images/pngwing 1.png"
+import FilterImage from "../../images/FilterImage.png"
 import Image from "next/image"
 export interface IButtonProps {
     text?: string;
@@ -16,7 +16,7 @@ export const FilterButton: React.FC<IButtonProps> = ({
     return <Container onClick={onclick}>
         <StyledDiv>{text}</StyledDiv>
         <Image
-            src={image}
+            src={FilterImage}
             alt="none"
             width={15}
             height={15}
