@@ -8,7 +8,7 @@ export const TestTemplate = () => {
   return (
     <Container>
       <ButtonDiv>
-        <Button text="이거 빼고 점심 골라줘" />
+        <Button text="이거 빼고 점심 골라줘" color="blue" />
       </ButtonDiv>
     </Container>
   );
