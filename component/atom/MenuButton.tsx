@@ -24,4 +24,5 @@ const Container = styled.div`
   color: black;
   border-radius: 30px;
   cursor: pointer;
+  margin: 0 0.5rem; 
 `;
