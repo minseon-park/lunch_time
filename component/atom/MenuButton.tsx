@@ -27,4 +27,5 @@ const Container = styled.div`
   &:hover {
     background-color: orange;
   }
+  margin: 0 0.5rem;
 `;
