@@ -20,8 +20,11 @@ const Container = styled.div`
   height: 3rem;
   width: 13rem;
   font-size: 1.2rem;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   color: black;
   border-radius: 30px;
   cursor: pointer;
+  &:hover {
+    background-color: orange;
+  }
 `;
