@@ -5,6 +5,7 @@
       "babel-plugin-styled-components",
       {
         "ssr": true,
+        "fileName": true,
         "displayName": true,
         "preprocess": false
       }
