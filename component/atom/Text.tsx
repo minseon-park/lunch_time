@@ -16,7 +16,7 @@ export const Text: React.FC<ITextProps> = ({
   font_size = 1.2,
   font_weight = "bold",
   color = "black",
-  padding = 2,
+  padding = "0.6rem",
 }) => {
   return (
     <Container
@@ -42,5 +42,5 @@ const Container = styled.div<{
   font-weight: ${({ font_weight }) => font_weight};
   color: ${({ color }) => color};
   text-decoration: ${({ underline }) => underline && "underline"};
-  padding: ${({ padding }) => padding }rem;
+  padding: ${({ padding }) => padding };
 `;
