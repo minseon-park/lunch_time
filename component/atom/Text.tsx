@@ -42,5 +42,5 @@ const Container = styled.div<{
   font-weight: ${({ font_weight }) => font_weight};
   color: ${({ color }) => color};
   text-decoration: ${({ underline }) => underline && "underline"};
-  padding: ${({ padding }) => padding };
+  padding: ${({ padding }) => padding};
 `;
