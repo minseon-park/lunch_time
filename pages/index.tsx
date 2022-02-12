@@ -1,8 +1,10 @@
 import React from "react";
-import { TestTemplate } from "../component/templates/TestTemplate";
+import { MainTemplate } from "../component/templates/MainTemplate";
+import { RestaurantDetail } from "../component/templates/RestaurantDetail";
+import { RestaurantsList } from "../component/templates/RestaurantsList";
 
 const Home = () => {
-  return <TestTemplate />;
+  return <RestaurantDetail />;
 };
 
 export default Home;
