@@ -7,6 +7,8 @@ export interface ITitleProps {
   color?: string;
   title: string;
   main_text: string;
+  title_size?: number;
+  main_text_size?: number;
 }
 
 export const Title: React.FC<ITitleProps> = ({
@@ -14,17 +16,19 @@ export const Title: React.FC<ITitleProps> = ({
   color = "black",
   title = "오늘 점심시간에 이 메뉴 어때요?",
   main_text = "당신을 위한 50가지 추천 맛집",
+  title_size = 2.7,
+  main_text_size= 1,
 }) => {
   return (
     <>
       <Container>
         <Sort sort={sort}>
-          <Text font_size={2.7} font_weight="bold" color={color} padding="0.5">
+          <Text font_size={title_size} font_weight="bold" color={color} padding="0.5">
             {title}
           </Text>
         </Sort>
         <Sort sort={sort}>
-          <Text font_size={1} font_weight="normal" color={color} padding="0.5">
+          <Text font_size={main_text_size} font_weight="normal" color={color} padding="0.5">
             {main_text}
           </Text>
         </Sort>
@@ -36,16 +40,17 @@ export const Title: React.FC<ITitleProps> = ({
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  
 `;
 
 const Sort = styled.div<{ sort: "center" | "right" | "left" }>`
   ${({ sort }) => {
     if (sort == "right") {
-      return "margin-left: auto";
+      return "margin-left: auto;";
     } else if (sort == "left") {
       return "margin-right: auto;";
     } else {
-      return "margin-left: auto;margin-right: auto;";
+      return "margin-left: auto; margin-right: auto;";
     }
   }};
 `;
