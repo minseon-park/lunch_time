@@ -70,7 +70,6 @@ const Container = styled.div`
 
 const LogoDiv = styled.div`
     display: flex;
-    width: 100%;
     padding: 1rem 2rem;
 `;
 const MainDiv = styled.div`
