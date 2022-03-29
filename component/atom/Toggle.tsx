@@ -39,7 +39,7 @@ interface IToggle {
     z-index: 1;
     width: 4rem;
     height: 2rem;
-    bottom: 2rem;
+    top: 2rem;
     right: 1rem;
     svg {
       color: ${({ theme }) => theme.mode.themeIcon};
