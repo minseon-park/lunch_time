@@ -2,21 +2,29 @@ import styled from "styled-components";
 import { Text } from "../atom/Text";
 import { MenuButton } from "../atom/MenuButton";
 import { Button } from "../atom/Buttom";
-
+import { useState } from "react";
+import { useEffect } from "react";
+import { Title } from "../molecules/Title";
 const fakeData = ["마라탕", "짬뽕", "치킨", "만두", "김치찌개", "교양만두"];
 
 export const DislikeMenu = () => {
+  const [isbool, setIsbool] = useState(true);
+  const textColor = `${({theme}: {theme: any}) => theme.mode.primaryText}`;
+
   return (
     <Container>
-      <Text
-        underline={false}
-        font_size={1.5}
-        font_weight="normal"
-        color="#000000"
-        padding="2rem"
-      >
+        {/* <Text
+          underline={false}
+          font_size={1.6}
+          font_weight="normal"
+          color={({theme:str}) => theme.mode.primaryText}
+          padding="2rem"
+        >
+          
+        </Text> */}
+      <TitleDiv>
         지금 내가 먹고싶지 않은 음식
-      </Text>
+      </TitleDiv>
       <MenuDiv>
         {fakeData.map((data: string, i: number) => {
           return <MenuButton key={i} text={data}></MenuButton>;
@@ -39,9 +47,16 @@ const MenuDiv = styled.div`
   display: flex;
   flex-direction: row;
   overflow-y: auto;
-  margin-bottom: 400px;
+  margin-bottom: 300px;
 `;
 const ButtonSpace = styled.div`
   margin-top: auto;
   margin-left: auto;
 `;
+
+const TitleDiv = styled.div`
+  font-size: 1.5em;
+  color: ${({theme}) => theme.mode.primaryText};
+  padding: 2rem;
+`;
+
