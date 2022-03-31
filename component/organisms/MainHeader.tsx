@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { MainSearch } from "../molecules/MainSearch";
+import { MainSearch } from "../molecules/mainSearch";
 import { Title } from "../molecules/Title";
-
+import imgSrc from '../../images/HeaderImg.png';
 export const MainHeader = () => {
   return (
     <Container>
@@ -22,9 +22,10 @@ export const MainHeader = () => {
 };
 const Container = styled.div`
   display: flex;
-  border-radius: 20px;
+  border-radius: 0 0px 40px 40px;
   flex-direction: column;
-  background-color: black;
+  background-image: url('https://user-images.githubusercontent.com/78679696/160624410-7772a895-8d07-48e2-8ebc-56afdb8495f8.png');
+  background-size: 100%;
 `;
 const First = styled.div`
   margin: 20px;

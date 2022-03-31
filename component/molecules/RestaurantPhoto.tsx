@@ -10,8 +10,8 @@ export const RestaurantPhoto: React.FC<props> = ({ data }) => {
   return (
     <Container>
       {data &&
-        data.map((src) => (
-          <Cell>
+        data.map((src, i) => (
+          <Cell key={i}>
             <Image src={src} alt="image" />
           </Cell>
         ))}
