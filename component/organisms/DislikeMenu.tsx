@@ -13,15 +13,6 @@ export const DislikeMenu = () => {
 
   return (
     <Container>
-        {/* <Text
-          underline={false}
-          font_size={1.6}
-          font_weight="normal"
-          color={({theme:str}) => theme.mode.primaryText}
-          padding="2rem"
-        >
-          
-        </Text> */}
       <TitleDiv>
         지금 내가 먹고싶지 않은 음식
       </TitleDiv>
